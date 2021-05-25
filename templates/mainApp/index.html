@@ -1,0 +1,107 @@
+{% include 'layout/layout.html' %}
+{% load static %}
+<body>
+    <!-- section -->
+<div class="section padding_layout_1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="full">
+            <div class="main_heading text_align_center">
+              <h2>Mitigar la deserción</h2>
+              <p class="large">Ayudando a encontrar patrones de bajo rendimiento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row about_blog">
+        <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
+          <div class="full text_align_left">
+            <h3>¿Qué hacemos?</h3>
+            <p>El propósito de este proyecto es lograr predecir el nivel de porcentaje de deserción en un
+               estudiante de pregrado en sus primeros semestres, para que de esta manera se puedan tomar 
+               cartas en el asunto con mucha más antelación. </p>
+            <ul>
+              <li><i class="fa fa-check-circle"></i>Con ayuda de redes neuronales.</li>
+              <li><i class="fa fa-check-circle"></i>Con gamificación</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+          <div class="full text_align_center"> <img class="img-responsive" src="{% static 'images/it_service/Estudiantes.jpg' %}" alt="#" /> </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 35px">
+        <div class="col-md-8">
+          <div class="full margin_bottom_30">
+            <div class="accordion border_circle">
+              <div class="bs-example">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <p class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-star" aria-hidden="true"></i> Predes<i class="fa fa-angle-down"></i></a> </p>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        <p>El proyecto tiene como fin usar redes neuronales artificiales 
+                          para el procesamiento de datos obtenidos por medio de la gamificación 
+                          en estudiantes de la Universidad Cesmag. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <p class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="fa fa-bar-chart"></i> Deserción <i class="fa fa-angle-down"></i></a> </p>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>La deserción, iene un porcentaje alto en diferentes carreras por múltiples motivos, 
+                          de los cuales pueden ser la falta de motivación, bajo rendimiento académico, 
+                          problemas familiares, entre otros. .</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <p class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><i class="fa fa-star"></i> Red neuronal<i class="fa fa-angle-down"></i></a> </p>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>Las redes neuronales artificiales han abierto un campo de exploración bursátil que aún 
+                          tiene mucho por investigar. Atendiendo a las ventajas del uso de las redes neuronales 
+                          artificiales (ANN, por sus siglas en inglés) y a su capacidad para estimar modelos no lineales.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <p class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><i class="fa fa-bar-chart" aria-hidden="true"></i> Gamificación<i class="fa fa-angle-down"></i></a> </p>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        <p>Es una técnica en la que se involucra como un juego, pero adaptado a un ámbito educativo en donde 
+                          consiste en el uso de diferentes técnicas en donde no solo son juegos para involucrar a los usuarios para resolver problemas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="full" style="margin-top: 35px;">
+            <h3>Inteligencia Artificial</h3>
+            <p>Donde quiera que se mire, el dominio de la ciencia y la tecnología crece a pasos agigantados y cada día que pasa 
+              se lleva a los límites de lo posible un poco más allá. Es tanto así que en la actualidad ha nacido una nueva tecnología 
+              llamada inteligencia artificial que se sitúa en los años cincuenta; en esa fecha la informática se había desarrollado, y 
+              ya se planteaba la posibilidad de diseñar máquinas inteligentes. Hoy en día se habla de vida artificial, algoritmos genéticos, 
+              computación molecular o redes neuronales artificiales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section -->
+  {% include 'layout/footer.html' %}
+</body>
