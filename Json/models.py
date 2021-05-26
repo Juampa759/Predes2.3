@@ -7,12 +7,18 @@ class person(models.Model):
     pregunta = models.IntegerField()
     score = models.IntegerField()
 
+    def __str__(self):
+        return self.person
+
 class pregunta(models.Model):
     pregunta = models.CharField(max_length=500)
     resA = models.CharField(max_length=200)
     resB = models.CharField(max_length=200)
     resC = models.CharField(max_length=200)
     resD = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.pregunta
 
 class RespuestaUsu(models.Model):
     User = models.ForeignKey(User, verbose_name="Usuario", on_delete= models.CASCADE)
