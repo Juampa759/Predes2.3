@@ -10,15 +10,6 @@ def preguntaJson(request):
 
     if(request.method == 'GET'):        
         usuId = request.GET.get('id')
-
-        #aqui verifico si ya ha respondido preguntas antes, si no creo el id de la pregunta y lo inicializo en 1
-        try:
-            usu = person.objects.get(User_id=usuId)
-
-        except:
-            persona = person(pregunta = 1,
-                User_id=usuId, score = 0)
-            persona.save()
         try:    
             #aqui verifico en que id de la pregunta está el usuario 
             usu = person.objects.get(User_id=usuId)

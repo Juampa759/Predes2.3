@@ -8,7 +8,7 @@ class person(models.Model):
     score = models.IntegerField()
 
     def __str__(self):
-        return self.person
+        return self.User
 
 class pregunta(models.Model):
     pregunta = models.CharField(max_length=500)
