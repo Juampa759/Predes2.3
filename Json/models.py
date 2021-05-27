@@ -8,7 +8,7 @@ class person(models.Model):
     score = models.IntegerField()
 
     def __str__(self):
-        return self.User_id
+        return self.Usuario
 
 
 
